@@ -23,39 +23,39 @@
           <img src="#" alt="магазин Мишка.">
         </a>
       </div>
-      <ul class="nav__list nav__list--main list-reset">
-        <li class="nav__list__item--main">
+      <ul class="nav__list nav__list-main list-reset">
+        <li class="nav__list__item-main">
           <a href="#">
             <p>Каталог товаров</p>
           </a>
         </li>
-        <li class="nav__list__item--main">
+        <li class="nav__list__item-main">
           <a href="#">
             <p>Вязание на заказ</p>
           </a>
         </li>
       </ul>
-      <ul class="nav__list nav__list--user list-reset">
-        <li class="nav__list__item--user">
+      <ul class="nav__list nav__list-user list-reset">
+        <li class="nav__list__item-user">
           <a href="#">
             <svg href="#" alt="Лупа."></svg>
             <p>Поиск по сайту</p>
           </a>
         </li>
-        <li class="nav__list__item--user">
+        <li class="nav__list__item-user">
           <a href="#">
             <svg href="#" alt="Корзина."></svg>
             <p>Корзина: пока пуста</p>
           </a>
         </li>
       </ul>
-      <ul class="nav__list nav__list--promo list-reset">
-        <li class="nav__list__item--promo">
+      <ul class="nav__list nav__list-promo list-reset">
+        <li class="nav__list__item-promo">
           <a href="#">
             <p>Новые поступления</p>
           </a>
         </li>
-        <li class="nav__list__item--promo">
+        <li class="nav__list__item-promo">
           <a href="#">
             <p>Распродажа</p>
           </a>
@@ -63,18 +63,20 @@
       </ul>
       <p class="nav__sale-text">Бесплатная доставка по России</p>
     </nav>
-    <h1 class="topic__title tile title--form"> Вязание на заказ </h1>
+    <h1 class="header__nav-topic__title title title--form"> Вязание на заказ </h1>
   </header>
+
   <main>
+
     <section class="form">
       <form class="form__filter" action="https://echo.htmlacademy.ru/" method="get">
         <div class="form__filter-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
         <fieldset class="form__product-type">
           <legend class="form__product-type-title">Тип</legend>
           <div class="form__product-type__filter-list">
-            <input class="form__product-type__filter-input--filter-input-radio" type="radio" name="product-type" value="interior-accessories" id="interior-accessories" checked>
+            <input class="form__product-type__filter-list__input-filter-radio" type="radio" name="product-type" value="interior-accessories" id="interior-accessories" checked>
             <label class="filter-control" for="interior-accessories">Аксессуар для интерьера</label>
-            <input class="form__product-type__filter-input--filter-input-radio" type="radio" name="product-type" value="child-toy" id="child-toy">
+            <input class="form__product-type__filter-list__input-filter-radio" type="radio" name="product-type" value="child-toy" id="child-toy">
             <label class="filter-control" for="child-toy">Детская игрушка</label>
           </div>
         </fieldset>
@@ -82,17 +84,17 @@
         <fieldset class="form__product-color">
           <legend class="form__product-color-title">Цвет</legend>
           <div class="form__product-color__filter-list">
-            <input class="form__product-color__filter-input--filter-input-check" type="checkbox" name="white" id="white" checked>
+            <input class="form__product-color__filter-list__filter-input-check" type="checkbox" name="white" id="white" checked>
             <label class="filter-control" for="white">Белый</label>
-            <input class="form__product-color__filter-input--filter-input-check" type="checkbox" name="tiffany" id="tiffany">
+            <input class="form__product-color__filter-list__filter-input-check" type="checkbox" name="tiffany" id="tiffany">
             <label class="filter-control" for="tiffany">Тиффани</label>
-            <input class="form__product-color__filter-input--filter-input-check" type="checkbox" name="pink" id="pink">
+            <input class="form__product-color__filter-list__filter-input-check" type="checkbox" name="pink" id="pink">
             <label class="filter-control" for="pink">Розовый</label>
-            <input class="form__product-color__filter-input--filter-input-check" type="checkbox" name="gray" id="gray" checked>
+            <input class="form__product-color__filter-list__filter-input-check" type="checkbox" name="gray" id="gray" checked>
             <label class="filter-control" for="gray">Серый</label>
-            <input class="form__product-color__filter-input--filter-input-check" type="checkbox" name="black" id="black">
+            <input class="form__product-color__filter-list__filter-input-check" type="checkbox" name="black" id="black">
             <label class="filter-control" for="black">Черный</label>
-            <input class="form__product-color__filter-input--filter-input-check" type="checkbox" name="orange" id="orange">
+            <input class="form__product-color__filter-list__filter-input-check" type="checkbox" name="orange" id="orange">
             <label class="filter-control" for="orange">Оранжевый</label>
           </div>
         </fieldset>
@@ -123,13 +125,13 @@
 
         <div class="form__client-contacts">
           <div>
-            <label class="form__client-contacts--telephone" for="telephone">ТЕЛ</label>
-            <input class="form__client-contacts--telephone__form-input" id="telephone" name="telephone" type="telephone" placeholder="+7 XXX XX XX*" required>
+            <label class="form__client-contacts-telephone" for="telephone">ТЕЛ</label>
+            <input class="form__client-contacts-telephone__form-input" id="telephone" name="telephone" type="telephone" placeholder="+7 XXX XX XX*" required>
             <svg class="" alt="Трубка."></svg>
           </div>
           <div>
-            <label class="form__client-contacts--email" for="e-mail">E-MAIL</label>
-            <input class="form__client-contacts--email__form-input" id="e-mail" name="e-mail" type="e-mail" placeholder="Ваш e-mail*" required>
+            <label class="form__client-contacts-email" for="e-mail">E-MAIL</label>
+            <input class="form__client-contacts-email__form-input" id="e-mail" name="e-mail" type="e-mail" placeholder="Ваш e-mail*" required>
             <svg class="" alt="Конверт."></svg>
           </div>
         </div>
