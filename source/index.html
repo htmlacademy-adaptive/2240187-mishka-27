@@ -14,50 +14,44 @@
     <nav class="header__nav nav container">
 
       <button class="nav__toggle" type="button">
-        <p class="visually-hidden">Открыть меню.</p>
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
 
       <div class="nav__logo-container">
-        <a href="#" class="nav__logo">
-          <img src="#" alt="магазин Мишка.">
+        <a class="nav__logo">
+          <img src="#" width="86" height="35" alt="Логотип магазина Mishka.">
         </a>
       </div>
-      <ul class="nav__list nav__list-main list-reset">
-        <li class="nav__list__item-main">
-          <a href="#">
-            <p>Каталог товаров</p>
-          </a>
+
+      <ul class="nav__list nav__list--main list-reset">
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="nav__list__item-main">
-          <a href="#">
-            <p>Вязание на заказ</p>
-          </a>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
-      <ul class="nav__list nav__list-user list-reset">
-        <li class="nav__list__item-user">
-          <a href="#">
+
+      <ul class="nav__list nav__list--user list-reset">
+        <li class="nav__item">
+          <a class="nav__link nav__link--icon nav__link--search" href="#">
             <svg href="#" alt="Лупа."></svg>
-            <p>Поиск по сайту</p>
+            <span>Поиск по сайту</span>
           </a>
         </li>
-        <li class="nav__list__item-user">
-          <a href="#">
+        <li class="nav__item">
+          <a class="nav__link nav__link--icon nav__link--card" href="#">
             <svg href="#" alt="Корзина."></svg>
-            <p>Корзина: пока пуста</p>
+            <span>Корзина: пока пуста</span>
           </a>
         </li>
       </ul>
-      <ul class="nav__list nav__list-promo list-reset">
-        <li class="nav__list__item-promo">
-          <a href="#">
-            <p>Новые поступления</p>
-          </a>
+      <ul class="nav__list nav__list--promo list-reset">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Новые поступления</a>
         </li>
-        <li class="nav__list__item-promo">
-          <a href="#">
-            <p>Распродажа</p>
-          </a>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Распродажа</a>
         </li>
       </ul>
       <p class="nav__sale-text">Бесплатная доставка по России</p>
@@ -131,8 +125,22 @@
               <p class="reviews__email">@misssssiskras</p>
             </div>
           </li>
-          <li class="reviews__item">...</li>
-          ...
+          <li class="reviews__item">
+            <p class="reviews__desc">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <div class="reviews__author">
+              <h3 class="reviews__name">Екатерина Красильникова</h3>
+              <p class="reviews__email">@misssssiskras2</p>
+            </div>
+
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__desc">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <div class="reviews__author">
+              <h3 class="reviews__name">Елена Красильникова</h3>
+              <p class="reviews__email">@misssssiskras3</p>
+            </div>
+          </li>
+
         </ol>
         <a class="reviews__button button" href="#">Написать</a>
         <div class="reviews__control">
@@ -145,7 +153,7 @@
         </div>
       </div>
     </section>
-    <button class="feedback">Напишите нам</button>
+
     <section class="contacts">
       <div class="contacts__container container">
         <div class="contacts__text">
@@ -161,7 +169,7 @@
         </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
         <div class="contacts__map">
-          <iframe ......></iframe>
+          <iframe width="527" height="457" src="https://yandex.ru/maps/-/CCURYYuGsB" frameborder="0" allowfullscreen></iframe>
           <div class="contacts__map-img">
             <img src="#" width="320" height="454" alt="Вязаные корзинки.">
           </div>
@@ -221,17 +229,30 @@
       </a>
     </div>
   </footer>
-  <div class="body__modal-container body__modal-container-close">
-    <section class="body__modal-container__product-size">
-      <h2>Добавить в корзину</h2>
-      <p>Выберите размер:</p>
-      <div>
-        <a href="#">S</a>
-        <a href="#">M</a>
-        <a href="#">L</a>
-      </div>
-      <button class="add-to-cart">Добавить</button>
-    </section>
+  <div class="overlay"></div>
+  <div class="modal">
+    <div class="modal__container size">
+      <h2 class="size__title">Добавить в корзину</h2>
+      <p class="size__text">Выберите размер:</p>
+
+      <form class="size__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="size__container">
+          <div class="size__item">
+            <input class="visually-hidden size__input" type="radio" name="size" id="size-s" value="size-s" checked>
+            <label class="size__label" for="size-s">S</label>
+          </div>
+          <div class="size__item">
+            <input class="visually-hidden size__input" type="radio" name="size" id="size-m" value="size-m">
+            <label class="size__label" for="size-m">M</label>
+          </div>
+          <div class="size__item">
+            <input class="visually-hidden size__input" type="radio" name="size" id="size-l" value="size-m">
+            <label class="size__label" for="size-l">L</label>
+          </div>
+        </div>
+        <button class="button size__submit" type="submit">Добавить</button>
+      </form>
+    </div>
   </div>
 </body>
 
