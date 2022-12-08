@@ -1,0 +1,33 @@
+// .nav
+// .nav__toggle
+// .nav__logo-container
+// .nav__logo
+// .nav__list
+// .nav__list--main
+// .nav__item
+.nav__link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: $font-regular;
+  color: $primary-color;
+}
+
+// .nav__list--user
+// .nav__link--icon
+// .nav__link--search
+.nav__link--cart {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  font-family: $font-regular;
+  color: $primary-color;
+}
+
+// .nav__list--promo
+.nav__sale-text {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: $font-regular;
+  color: #444444;
+}

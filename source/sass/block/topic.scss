@@ -1,0 +1,39 @@
+.topic {
+  padding: 73px 0;
+
+  background-color: #f1f1f1;
+}
+
+.topic--home {
+  position: relative;
+
+  padding-bottom: 0;
+
+  background-color: #f9f9f9;
+  // Картинка для мобильных в формате png
+  background-image: url("../img/hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top -17px;
+}
+
+// .topic__container {
+// }
+.topic__title {
+  font-weight: 700;
+  font-size: 43px;
+  font-family: $font-regular;
+}
+
+// .topic__catalog-links
+.topic__catalog-item {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: $font-regular;
+}
+
+//.topic__catalog-item--interior {
+//}
+
+//.topic__catalog-item--toys {
+
+//}
