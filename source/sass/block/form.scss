@@ -1,10 +1,8 @@
 //.form {
 //}
 .form__desc {
-  font-weight: 400;
-  font-size: 17px;
-  font-family: $font-regular;
-  color: #444444;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 //.form__section {
@@ -14,9 +12,8 @@
 //.form__container {
 //}
 .form__section-name {
-  font-weight: 700;
   font-size: 17px;
-  font-family: $font-regular;
+  line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
 }
@@ -37,8 +34,8 @@
 //}
 .form__label-text {
   font-weight: 700;
-  font-size: 19px;
-  font-family: $font-regular;
+  font-size: 17px;
+  line-height: 18px;
   color: $primary-color;
 }
 
@@ -56,8 +53,9 @@
 //}
 .form__input {
   font-weight: 400;
-  font-size: 19px;
-  font-family: $font-regular, 30%;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $font-regular;
 }
 
 //.form__section--contacts {
@@ -75,8 +73,6 @@
 //.form__button {
 //}
 .form__hint {
-  font-weight: 400;
-  font-size: 17px;
-  font-family: $font-regular;
-  color: #444444;
+  font-size: 14px;
+  line-height: 16px;
 }

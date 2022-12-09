@@ -6,29 +6,27 @@
 // }
 .promo__title {
   font-weight: 700;
-  font-size: 43px;
-  font-family: $font-regular;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .promo__type {
   font-weight: 700;
   font-size: 17px;
-  font-family: $font-regular;
   color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .promo__text {
   font-weight: 400;
-  font-size: 17px;
-  font-family: $font-regular;
-  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .promo__description {
   font-weight: 400;
   font-size: 15px;
-  font-family: $font-regular;
-  color: #444444;
+  line-height: 20px;
 }
 
 // .promo__item {
@@ -39,9 +37,8 @@
 // }
 .promo__price {
   font-weight: 700;
-  font-size: 20px;
-  font-family: $font-regular;
-  color: #444444;
+  font-size: 17px;
+  line-height: 24px;
 }
 // .promo__button {
 // }

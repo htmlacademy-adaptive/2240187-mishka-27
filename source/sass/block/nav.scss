@@ -7,9 +7,8 @@
 // .nav__item
 .nav__link {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 24px;
-  font-family: $font-regular;
   color: $primary-color;
 }
 
@@ -18,16 +17,11 @@
 // .nav__link--search
 .nav__link--cart {
   font-weight: 700;
-  font-size: 19px;
-  line-height: 18px;
-  font-family: $font-regular;
+  font-size: 17px;
+  line-height: 24px;
   color: $primary-color;
 }
 
 // .nav__list--promo
-.nav__sale-text {
-  font-weight: 400;
-  font-size: 15px;
-  font-family: $font-regular;
-  color: #444444;
-}
+//.nav__sale-text {
+//}

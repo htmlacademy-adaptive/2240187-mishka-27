@@ -2,14 +2,16 @@
 //}
 .size__title {
   font-weight: 700;
-  font-size: 30px;
-  font-family: $font-regular;
+  font-size: 25px;
+  color: $primary-color;
+  text-transform: uppercase;
+
+  line-break: 30px;
 }
 
 .size__text {
-  font-weight: 400;
-  font-size: 17px;
-  font-family: $font-regular;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 //.size__container {
@@ -23,7 +25,7 @@
 .size__label {
   font-weight: 700;
   font-size: 17px;
-  font-family: $font-regular;
+  line-height: 16px;
 }
 //.button {
 //}
