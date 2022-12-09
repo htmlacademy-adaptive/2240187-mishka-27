@@ -181,7 +181,7 @@ img {
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  background-image: url("../style.scss/reviews.jpg");
+  background-image: url("../img/reviews.jpg");
 }
 
 .reviews__desc {
