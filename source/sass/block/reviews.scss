@@ -1,5 +1,7 @@
-//.reviews {
-//}
+.reviews {
+  background-image: url("../img/reviews.jpg");
+  background-repeat: no-repeat;
+}
 
 // .reviews__container {
 // }
@@ -7,8 +9,6 @@
   font-size: 25px;
   line-height: 30px;
   color: $primary-color;
-
-  background-image: url("../img/reviews.jpg");
 }
 
 // .reviews__list {
