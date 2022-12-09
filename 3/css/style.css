@@ -177,11 +177,15 @@ img {
   line-height: 20px;
 }
 
+.reviews {
+  background-image: url("../img/reviews.jpg");
+  background-repeat: no-repeat;
+}
+
 .reviews__title {
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  background-image: url("../img/reviews.jpg");
 }
 
 .reviews__desc {
