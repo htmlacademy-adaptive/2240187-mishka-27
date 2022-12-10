@@ -1,0 +1,26 @@
+//.video {
+//}
+//.video__container {
+//}
+//.video__image {
+//}
+.video__play {
+  z-index: 1;
+
+  background-image: url("../../img/play-mobile.svg");
+}
+
+.video__title {
+  font-size: 17px;
+  line-height: 24px;
+  color: $primary-color;
+}
+
+.video__desc {
+  font-size: 13px;
+  line-height: 24px;
+}
+//.video__text {
+//}
+//.video__button {
+//}

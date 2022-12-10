@@ -1,0 +1,35 @@
+// Всегда внимательно смотри терминал, если ошибки, если есть то исправляй
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+
+  display: grid;
+  min-width: 320px;
+
+  font-size: 15px;
+  line-height: 30px;
+  font-family: $font-regular;
+  color: #444444;
+
+  grid-template-rows: auto 1fr auto;
+}
+
+img {
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
