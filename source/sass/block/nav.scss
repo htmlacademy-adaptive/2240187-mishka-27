@@ -1,25 +1,43 @@
-// .nav
-// .nav__toggle
-// .nav__logo-container
-// .nav__logo
-// .nav__list
+.nav {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+}
+
+.nav__toggle {
+  align-self: flex-end;
+}
+
+.nav__logo-container {
+  align-self: center;
+}
+
+.nav__logo {
+  height: $logo-mobile-height;
+}
+
+//.nav__list {
+//}
+
 // .nav__list--main
 // .nav__item
 .nav__link {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: $primary-color;
+  color: $black;
 }
 
-// .nav__list--user
+//.nav__list--user {
+//}
+
 // .nav__link--icon
 // .nav__link--search
 .nav__link--cart {
-  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: $primary-color;
+  color: $black;
 }
 
 // .nav__list--promo

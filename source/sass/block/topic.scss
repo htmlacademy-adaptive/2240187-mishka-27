@@ -1,5 +1,9 @@
 .topic {
+  display: flex;
+  flex-direction: column;
   padding: 73px 0;
+
+  text-align: center;
 
   background-color: #f1f1f1;
 }
@@ -18,7 +22,6 @@
 // .topic__container {
 // }
 .topic__title {
-  font-weight: 700;
   font-size: 27px;
   line-height: 30px;
 }
