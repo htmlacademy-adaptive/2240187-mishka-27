@@ -11,7 +11,9 @@
 }
 
 @media (min-width: $mobile-width) {
-  display: none;
+  .header__nav {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
