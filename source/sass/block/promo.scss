@@ -28,8 +28,21 @@
 
 // .promo__item {
 // }
-// .promo__image {
-// }
+.promo__image img {
+  width: 260px;
+  height: 315px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
+}
+
 // .promo__price-container {
 // }
 .promo__price {

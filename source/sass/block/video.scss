@@ -2,8 +2,21 @@
 //}
 //.video__container {
 //}
-//.video__image {
-//}
+.video__image img {
+  width: 260px;
+  height: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    height: 455px;
+  }
+}
+
 .video__play {
   z-index: 1;
 

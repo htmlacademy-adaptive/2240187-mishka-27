@@ -1,5 +1,8 @@
-//.form {
-//}
+.form {
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
 .form__desc {
   font-size: 13px;
   line-height: 24px;
@@ -39,8 +42,10 @@
   color: $black;
 }
 
-//.form__section--check {
-//}
+.form__section--check {
+  background-color: $grey;
+}
+
 //.form__label--check {
 //}
 //.form__input-control--checkbox {
@@ -57,8 +62,10 @@
   font-family: $font-regular;
 }
 
-//.form__section--contacts {
-//}
+.form__section--contacts {
+  background-color: $grey;
+}
+
 //.form__label-contacts {
 //}
 //.form__label-contacts--tel {

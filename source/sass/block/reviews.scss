@@ -1,6 +1,13 @@
 .reviews {
-  background-image: url("../img/reviews.jpg");
-  background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/reviews.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/reviews.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 // .reviews__container {
