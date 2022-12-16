@@ -1,37 +1,37 @@
-.catalog {
-  width: 100%;
-}
+//.catalog {
+//}
 
 //.catalog__container {
 //}
 //.container {
 //}
 .catalog__list {
-  display: flex;
-  flex-direction: column;
-
   @media (min-width: $desktop-width) {
     display: grid;
 
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 //.catalog__item {
 //}
-.catalog__image img {
-  width: 260px;
+.catalog__image {
+  display: block;
   height: 195px;
 
   @media (min-width: $tablet-width) {
-    width: 334px;
     height: 334px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 316px;
     height: 462px;
   }
+}
+
+.catalog__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 //.catalog__list-container {

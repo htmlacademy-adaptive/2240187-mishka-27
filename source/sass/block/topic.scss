@@ -1,9 +1,5 @@
 .topic {
-  display: flex;
-  flex-direction: column;
   padding: 73px 0;
-
-  text-align: center;
 
   background-color: #f1f1f1;
 }
@@ -19,15 +15,30 @@
   background-position: center top -17px;
 }
 
-// .topic__container {
-// }
-.topic__title {
-  font-size: 27px;
-  line-height: 30px;
+.topic--home .topic__container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: transparent;
 }
 
-// .topic__catalog-links
+.topic__title {
+  @media (max-width: 320px) {
+    font-size: 27px;
+  }
+}
+
+.topic__catalog-links {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .topic__catalog-item {
+  display: block;
+
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -37,5 +48,4 @@
 //}
 
 //.topic__catalog-item--toys {
-
 //}
