@@ -6,17 +6,14 @@
 
   grid-template-columns: 1fr;
 
-  @media (min-width: $tablet-width) {
-  }
-
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr auto;
   }
 }
 
 //.contacts__text
-// .contacts__title
-// .contacts__list
+//.contacts__title
+//.contacts__list
 
 .contacts__item {
   font-size: 14px;
