@@ -42,10 +42,18 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-//.topic__catalog-item--interior {
-//}
+.topic__catalog-item--interior {
+  background-color: #63d1bb;
+  background-image: url("../../img/svg/lamp.svg");
+  background-repeat: no-repeat;
+}
 
-//.topic__catalog-item--toys {
-//}
+.topic__catalog-item--toys {
+  background-color: #56c3b2;
+  background-image: url("../../img/svg/toy.svg");
+  background-repeat: no-repeat;
+}

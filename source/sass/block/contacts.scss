@@ -12,13 +12,22 @@
 }
 
 //.contacts__text
-//.contacts__title
+.contacts__title {
+  background-image: url("../../img/svg/flag.svg");
+  background-repeat: no-repeat;
+}
+
 //.contacts__list
 
 .contacts__item {
   font-size: 14px;
   line-height: 30px;
   color: $grey;
+}
+
+.contacts__item a {
+  color: $grey;
+  text-decoration: underline #62d1ba;
 }
 
 .contacts__button {

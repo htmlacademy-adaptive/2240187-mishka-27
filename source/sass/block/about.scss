@@ -4,14 +4,51 @@
 }
 
 .about__list {
+  display: flex;
+  flex-direction: column;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-row: 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-// .about__item
-// .about__item--ecolog
-// .about__item--rusprice
-// .about__item--like
-// .about__item--handmade
-// .about__item--support
-// .about__item--gift
+
+.about__item {
+  padding: 40px;
+}
+
+.about__item--ecolog {
+  background-image: url("../img/svg/ecolog.svg");
+  background-repeat: no-repeat;
+}
+
+.about__item--rusprice {
+  background-image: url("../img/svg/rusprice.svg");
+  background-repeat: no-repeat;
+}
+
+.about__item--like {
+  background-image: url("../img/svg/like.svg");
+  background-repeat: no-repeat;
+}
+
+.about__item--handmade {
+  background-image: url("../img/svg/handmade.svg");
+  background-repeat: no-repeat;
+}
+
+.about__item--support {
+  background-image: url("../img/svg/support.svg");
+  background-repeat: no-repeat;
+}
+
+.about__item--gift {
+  background-image: url("../img/svg/gift.svg");
+  background-repeat: no-repeat;
+}

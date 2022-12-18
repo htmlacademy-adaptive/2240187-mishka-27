@@ -9,7 +9,7 @@
 //.form__section {
 //}
 //.form__section--radio {
-//}
+//.form__section--check
 //.form__container {
 //}
 .form__section-name {
@@ -21,8 +21,25 @@
 
 //.form__section-name--lines {
 //}
-//.form__input-wrapper {
-//}
+.form__input-wrapper-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input-wrapper-color {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
 //.form__label {
 //}
 //.form__input-control {

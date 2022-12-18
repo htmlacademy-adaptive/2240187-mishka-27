@@ -63,8 +63,19 @@
 
 .reviews__button {
   order: 1;
+  width: 260px;
+  height: 52px;
 
   @media (min-width: $tablet-width) {
+    width: 175px;
+
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+
     grid-column: 2/-1;
     grid-row: 1/2;
   }
@@ -72,9 +83,15 @@
 
 // .reviews__control {
 // }
-// .reviews__control-arrow {
-// }
-// .reviews__control-arrow--prev {
-// }
-// .reviews__control-arrow--next {
-// }
+//.reviews__control-arrow {
+//}
+
+.reviews__control-arrow--prev {
+  background-image: url("../img/svg/arrow-left.svg");
+  background-repeat: no-repeat;
+}
+
+.reviews__control-arrow--next {
+  background-image: url("../img/svg/arrow-right.svg");
+  background-repeat: no-repeat;
+}

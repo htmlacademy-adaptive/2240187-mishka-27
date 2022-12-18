@@ -1,6 +1,10 @@
-// .copyright
+.copyright {
+  text-decoration: none;
+}
+
 .copyright__text {
   font-weight: 700;
   font-size: 19px;
   font-family: $font-regular;
+  color: $black;
 }
