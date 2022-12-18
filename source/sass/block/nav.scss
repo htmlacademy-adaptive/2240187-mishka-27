@@ -114,14 +114,12 @@
     display: grid;
     justify-content: start;
 
-    gap: 38px;
     grid-template-columns: repeat(2, auto);
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
 
-    gap: 38px;
     grid-column: 1/2;
   }
 }
@@ -139,7 +137,6 @@
     order: 0;
     min-height: auto;
 
-    gap: 38px;
     grid-column: 3/4;
   }
 }
@@ -151,12 +148,13 @@
     display: grid;
 
     grid-column: 1/2;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, auto);
   }
 }
 
 .nav__link {
   display: block;
+  padding: 20px;
 
   font-weight: 700;
   font-size: 17px;
