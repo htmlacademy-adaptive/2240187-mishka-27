@@ -19,13 +19,18 @@
 
 .promo__title-container {
   @media (min-width: $tablet-width) {
+    position: relative;
+
     display: grid;
+    align-items: center;
 
     grid-column: 1/-1;
     grid-template-columns: 1fr 125px;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
     grid-row: 1 / span 1;
   }
 }
