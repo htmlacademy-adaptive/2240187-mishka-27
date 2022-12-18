@@ -74,10 +74,6 @@ img {
   }
 }
 
-.promo__title-container {
-  position: relative;
-}
-
 .button {
   display: block;
   width: 100%;
@@ -367,13 +363,16 @@ img {
 
 @media (min-width: 768px) {
   .promo__title-container {
+    position: relative;
     display: grid;
+    align-items: center;
     grid-column: 1/-1;
     grid-template-columns: 1fr 125px;
   }
 }
 @media (min-width: 1150px) {
   .promo__title-container {
+    position: relative;
     grid-row: 1/span 1;
   }
 }
