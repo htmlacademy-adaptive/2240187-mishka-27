@@ -1,5 +1,6 @@
 //.form {
 //}
+
 .form__desc {
   font-size: 13px;
   line-height: 24px;
@@ -36,11 +37,13 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  color: $primary-color;
+  color: $black;
 }
 
-//.form__section--check {
-//}
+.form__section--check {
+  background-color: $grey;
+}
+
 //.form__label--check {
 //}
 //.form__input-control--checkbox {
@@ -52,14 +55,15 @@
 //.form__input-group {
 //}
 .form__input {
-  font-weight: 400;
   font-size: 17px;
   line-height: 18px;
   font-family: $font-regular;
 }
 
-//.form__section--contacts {
-//}
+.form__section--contacts {
+  background-color: $grey;
+}
+
 //.form__label-contacts {
 //}
 //.form__label-contacts--tel {

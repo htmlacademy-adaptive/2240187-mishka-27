@@ -5,7 +5,33 @@
   background-color: #f1f1f1;
 }
 
-// .footer__wrapper
-// .footer__logo
-// .footer__social
-// .footer__copyright
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+    justify-items: center;
+  }
+}
+
+.footer__logo {
+  display: none;
+  width: 102px;
+  height: 34px;
+
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.footer__logo svg {
+  fill: currentColor;
+}
+
+.footer__social {
+  display: grid;
+
+  grid-template-columns: repeat(3, 50px);
+}
