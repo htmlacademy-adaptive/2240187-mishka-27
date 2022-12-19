@@ -16,16 +16,22 @@
     position: static;
 
     display: grid;
+    min-height: 79px;
     padding: 0;
 
-    background-color: #f1f1f1;
-    border: none;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ececec;
 
     gap: 19px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 88px;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #ececec;
+
     gap: 0;
     grid-template-columns: 1fr 149px 1fr;
   }
@@ -168,9 +174,16 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    padding-right: 20px;
+
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 20px;
+
+    text-align: end;
+
     grid-column: 3/4;
   }
 }

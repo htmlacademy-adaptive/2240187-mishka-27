@@ -23,12 +23,16 @@
 }
 
 .topic__title {
+  text-align: center;
+
   @media (max-width: 320px) {
     font-size: 27px;
   }
 }
 
 .topic__catalog-links {
+  margin-top: 20px;
+
   @media (min-width: $tablet-width) {
     display: grid;
 
@@ -38,6 +42,7 @@
 
 .topic__catalog-item {
   display: block;
+  height: 103px;
 
   font-weight: 700;
   font-size: 19px;
@@ -47,13 +52,39 @@
 }
 
 .topic__catalog-item--interior {
+  display: grid;
+  align-content: center;
+  align-items: center;
+
+  column-gap: 50px;
+
   background-color: #63d1bb;
+
+  grid-template-columns: 280px auto;
+}
+
+.topic__catalog-item--interior svg {
+  margin-top: 70px;
+
   background-image: url("../../img/svg/lamp.svg");
   background-repeat: no-repeat;
 }
 
 .topic__catalog-item--toys {
+  display: grid;
+  align-items: center;
+  padding: 20px;
+
+  column-gap: 20px;
+
   background-color: #56c3b2;
+
+  grid-template-columns: 280px auto;
+}
+
+.topic__catalog-item--toys svg {
+  margin-top: 70px;
+
   background-image: url("../../img/svg/toy.svg");
   background-repeat: no-repeat;
 }

@@ -1,5 +1,6 @@
 .footer {
-  height: 143px;
+  height: 100%;
+  margin-top: 40px;
 
   font-size: 18px;
   line-height: 20px;
@@ -8,6 +9,12 @@
 }
 
 .footer__wrapper {
+  display: grid;
+  padding: 50px;
+
+  justify-items: center;
+  row-gap: 50px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     padding: 50px;
