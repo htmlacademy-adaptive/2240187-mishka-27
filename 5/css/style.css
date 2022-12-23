@@ -486,7 +486,6 @@ img {
   flex-direction: column;
   min-height: 415px;
   background-color: transparent;
-  background-color: transparent;
 }
 @media (min-width: 768px) {
   .topic--home .topic__container {
@@ -1562,23 +1561,6 @@ img {
     gap: 17px 59px;
     grid-template-columns: 683px 1fr;
     grid-template-rows: auto 1fr;
-  }
-}
-
-.video__image {
-  position: relative;
-  height: 150px;
-}
-@media (min-width: 768px) {
-  .video__image {
-    height: 455px;
-  }
-}
-@media (min-width: 1150px) {
-  .video__image {
-    width: 683px;
-    height: 453px;
-    grid-row: 1/span 2;
   }
 }
 
