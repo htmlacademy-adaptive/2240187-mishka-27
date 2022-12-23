@@ -29,23 +29,6 @@
   }
 }
 
-.video__image {
-  position: relative;
-
-  height: 150px;
-
-  @media (min-width: $tablet-width) {
-    height: 455px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 683px;
-    height: 453px;
-
-    grid-row: 1 / span 2;
-  }
-}
-
 .video__title {
   order: -1;
   margin: 0;
