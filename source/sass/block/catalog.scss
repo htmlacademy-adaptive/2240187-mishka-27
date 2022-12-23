@@ -1,6 +1,12 @@
 .catalog {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+  }
+
   @media (min-width: $desktop-width) {
-    height: 659px;
+    padding-top: 112px;
   }
 }
 
@@ -8,40 +14,45 @@
 //}
 //.container {
 //}
+
 .catalog__list {
+  display: grid;
+
+  gap: 30px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    gap: 54px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
 
-    grid-template-columns: repeat(3, auto);
+    gap: 51px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .catalog__item {
-  width: 260px;
-  height: 374px;
-  padding: 20px;
-
   @media (min-width: $tablet-width) {
     display: grid;
-    height: fit-content;
 
-    column-gap: 20px;
-
-    grid-template-columns: 333px 334px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-
-    column-gap: 20px;
-
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
   }
 }
 
 .catalog__image {
   display: block;
   height: 195px;
+
+  @media (min-width: $tablet-width) {
+    height: 334px;
+  }
 
   @media (min-width: $desktop-width) {
     height: 462px;
@@ -54,27 +65,61 @@
   height: 100%;
 }
 
-//.catalog__list-container {
-//}
+.catalog__list-container {
+  padding: 28px 28px 25px;
+
+  border: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 27px 33px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 27px 25px;
+  }
+}
 
 //.catalog__descrip {
 //}
 .catalog__title {
+  text-decoration: none;
+}
+
+.catalog__title h3 {
+  margin: 0;
+
   font-size: 17px;
   line-height: 24px;
   color: $black;
-  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .catalog__item-desc {
   font-size: 13px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .catalog__price-wrapper {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 23px;
 
-  grid-template-columns: repeat(2, auto);
+  border-top: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
 
 .catalog__price {
@@ -85,6 +130,18 @@
 }
 
 .catalog__cart {
-  background-image: url("../../img/svg/cart.svg");
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 19px;
+
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog__cart svg {
+  width: 100%;
+  height: 100%;
+
+  fill: currentColor;
 }

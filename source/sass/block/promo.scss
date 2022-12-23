@@ -1,5 +1,7 @@
-// .promo {
-// }
+.promo {
+  padding-top: 32px;
+  padding-bottom: 42px;
+}
 
 .promo__container {
   display: grid;
@@ -7,28 +9,34 @@
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, auto);
+    gap: 37px 42px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
+    padding-bottom: 60px;
+    padding-left: 226px;
+
+    gap: 35px 60px;
     grid-template-columns: 1fr 525px;
   }
 }
 
 .promo__title-container {
   @media (min-width: $tablet-width) {
-    z-index: 1;
-
     display: grid;
     align-items: center;
 
+    gap: 10px;
+    grid-column: 1/-1;
     grid-template-columns: 1fr 125px;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    padding-top: 61px;
 
-    grid-column: 1/-1;
     grid-row: 1 / span 1;
   }
 }
@@ -37,7 +45,7 @@
   text-align: start;
 
   @media (min-width: $desktop-width) {
-    margin-left: 100px;
+    z-index: 1;
   }
 }
 
@@ -51,14 +59,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    right: -400px;
+    line-height: 17px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 55px;
-    left: 10px;
+    top: 70px;
+    left: 82px;
 
     max-width: 100px;
   }
@@ -71,14 +79,23 @@
 
 .promo__description {
   display: grid;
+  margin: 0;
 
   line-height: 20px;
 
   grid-template-columns: 98px 1fr;
 }
 
-// .promo__item {
-// }
+.promo__item {
+  margin: 0;
+  padding: 7px 0 12px;
+
+  border-bottom: 1px solid #ececec;
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 0 14px;
+  }
+}
 
 .promo__image {
   width: 100%;
@@ -111,18 +128,19 @@
   height: 100%;
 }
 
-// .promo__price-container {
-// }
-
 .promo__price {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .promo__button {
-  width: 260px;
-
   @media (min-width: $tablet-width) {
     width: 292px;
   }

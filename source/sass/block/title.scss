@@ -1,4 +1,6 @@
 .title {
+  margin: 0;
+
   font-size: 25px;
   line-height: 30px;
   text-align: center;
@@ -15,8 +17,6 @@
   }
 
   &--main {
-    margin-top: 130px;
-
     text-align: center;
   }
 }
