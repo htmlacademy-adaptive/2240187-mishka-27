@@ -1,4 +1,19 @@
-// .social
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 27px;
+  justify-content: center;
+  padding: 27px 0 31px;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    border: none;
+  }
+}
+
 // .social__item
 
 .social__link {

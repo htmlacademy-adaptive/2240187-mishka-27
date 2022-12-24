@@ -1,6 +1,28 @@
-// .copyright
+// Здесь флекс
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 20px;
+
+  color: #000000;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .copyright__text {
+  margin-right: 27px;
+
   font-weight: 700;
   font-size: 19px;
-  font-family: $font-regular;
+  line-height: 18px;
+  color: $black;
+}
+
+.copyright svg {
+  fill: #63d1bb;
 }
