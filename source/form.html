@@ -37,7 +37,11 @@
 
       <div class="nav__logo-container">
         <a class="nav__logo" href="./index.html">
-          <img src="./img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/svg/mishka-logo-desktop.svg">
+            <source media="(min-width: 767px)" srcset="./img/svg/mishka-logo-tablet.svg">
+            <img src="./img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
+          </picture>
         </a>
       </div>
 

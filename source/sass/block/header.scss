@@ -3,12 +3,22 @@
 
   background-color: #f1f1f1;
 
-  @media (max-width: 767px) {
+  @media (max-width: $tablet-width) {
     padding-top: 80px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet.jpg");
+      background-size: 1338px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     overflow: hidden;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop.jpg");
+      background-size: 1338px auto;
+    }
   }
 }
 

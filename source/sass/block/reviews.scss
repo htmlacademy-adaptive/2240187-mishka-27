@@ -26,6 +26,11 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 175px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/reviews.jpg");
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -39,6 +44,11 @@
     background-size: 350px 457px;
 
     gap: 14px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/reviews.jpg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
