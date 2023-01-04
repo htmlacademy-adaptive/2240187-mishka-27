@@ -28,7 +28,7 @@
     grid-template-columns: 1fr 175px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/reviews.jpg");
+      background-image: url("../img/review@2x.jpg");
       background-repeat: no-repeat;
     }
   }
@@ -46,7 +46,7 @@
     gap: 14px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/reviews.jpg");
+      background-image: url("../img/review@2x.jpg");
       background-repeat: no-repeat;
     }
   }
