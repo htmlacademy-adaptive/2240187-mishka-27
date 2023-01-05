@@ -465,12 +465,11 @@ img {
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top -17px;
-  background-size: 70%;
+  background-size: auto 76%;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .topic--home {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 70%;
   }
 }
 @media (min-width: 768px) {
@@ -478,13 +477,12 @@ img {
     padding-top: 106px;
     background-image: url("../img/hero-tablet.jpg");
     background-position: center bottom 11px;
-    background-size: 70%;
+    background-size: auto 105%;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .topic--home {
     background-image: url("../img/hero-tablet@2x.jpg");
-    background-size: 70%;
   }
 }
 @media (min-width: 1150px) {
@@ -492,15 +490,11 @@ img {
     padding-top: 96px;
     background-image: url("../img/hero-desktop.jpg");
     background-position: center bottom 17px;
-    background-size: cover;
-    background-size: 70%;
   }
 }
 @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1150px) and (min-resolution: 2dppx) {
   .topic--home {
     background-image: url("../img/hero-desktop@2x.jpg");
-    background-size: cover;
-    background-size: 70%;
   }
 }
 
