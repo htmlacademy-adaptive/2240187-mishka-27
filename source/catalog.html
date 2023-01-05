@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mishka: магазин игрушек</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" href="#">
-  <link rel="icon" type="image/png" href="#">
+
+  <link rel="stylesheet" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="manifest" href="/manifest.json">
+
 </head>
 
 <body class="body">
@@ -20,7 +23,11 @@
 
       <div class="nav__logo-container">
         <a class="nav__logo" href="./index.html">
-          <img src="./img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/svg/mishka-logo-desktop.svg">
+            <source media="(min-width: 767px)" srcset="./img/svg/mishka-logo-tablet.svg">
+            <img src="./img/svg/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
+          </picture>
         </a>
       </div>
 
@@ -77,7 +84,11 @@
         <ul class="catalog__list list-reset">
           <li class="catalog__item">
             <a class="catalog__image" href="#">
-              <img src="./img/photo-1-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик.">
+              <picture>
+                <source media="(min-width:767px)" srcset="./img/photo-1-tablet.png 1x, ./img/photo-1-tablet@2x.png 2x">
+                <source media="(min-width:1200px)" srcset="./img/photo-1-desktop.png 1x, ./img/photo-1-desktop@2x.png 2x">
+                <img src="./img/photo-1-mobile.png" srcset="./img/photo-1-mobile@2x.png 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
+              </picture>
             </a>
             <div class="catalog__list-container">
               <div class="catalog__descrip">
@@ -100,7 +111,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__image" href="#">
-              <img src="./img/photo-2-mobile.png" width="260" height="195" alt="Корзинка для белья.">
+              <picture>
+                <source media="(min-width:767px)" srcset="./img/photo-2-tablet.png 1x, ./img/photo-2-tablet@2x.png 2x">
+                <source media="(min-width:1200px)" srcset="./img/photo-2-desktop.png 1x, ./img/photo-2-desktop@2x.png 2x">
+                <img src="./img/photo-2-mobile.png" srcset="./img/photo-2-mobile@2x.png 2x" width="260" height="195" alt="Корзинка для белья.">
+              </picture>
             </a>
             <div class="catalog__list-container">
               <div class="catalog__descrip">
@@ -123,7 +138,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__image" href="#">
-              <img src="./img/photo-3-mobile.png" width="260" height="195" alt="Большая корзинка для игрушек.">
+              <picture>
+                <source media="(min-width:767px)" srcset="./img/photo-3-tablet.png 1x, ./img/photo-3-tablet@2x.png 2x">
+                <source media="(min-width:1200px)" srcset="./img/photo-3-desktop.png 1x, ./img/photo-3-desktop@2x.png 2x">
+                <img src="./img/photo-3-mobile.png" srcset="./img/photo-3-mobile@2x.png 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
+              </picture>
             </a>
             <div class="catalog__list-container">
               <div class="catalog__descrip">
@@ -151,7 +170,11 @@
       <div class="video__container">
         <h2 class="visually-hidden">Видео</h2>
         <div class="video__image">
-          <img src="./img/video-mobile.png" width="260" height="150" alt="Большая корзинка для игрушек.">
+          <picture>
+            <source media="(min-width:767px)" srcset="./img/video-tablet.png">
+            <source media="(min-width:1200px)" srcset="./img/video-desktop.jpg">
+            <img src="./img/video-mobile.png" width="260" height="150" alt="Большая корзинка для игрушек.">
+          </picture>
           <a class="video__play" href="#">
             <span class="visually-hidden">Play</span>
           </a>
