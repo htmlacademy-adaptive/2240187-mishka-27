@@ -15,4 +15,16 @@
   background-color: #ffffff;
   border: 2px solid $grey;
   cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: #444444;
+  }
+
+  &:disabled {
+    color: #ffffff 30%;
+
+    background-color: #444444;
+  }
 }

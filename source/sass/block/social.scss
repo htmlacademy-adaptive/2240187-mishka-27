@@ -1,11 +1,12 @@
 .social {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 27px;
   justify-content: center;
   padding: 27px 0 31px;
 
   border-bottom: 1px solid #e5e5e5;
+
+  gap: 27px;
+  grid-template-columns: repeat(3, auto);
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -28,4 +29,14 @@
 
 .social__link svg {
   fill: currentColor;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:disabled {
+    opacity: 30%;
+
+    fill: #46c1ae;
+  }
 }

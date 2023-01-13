@@ -138,6 +138,10 @@
   @media (min-width: $tablet-width) {
     bottom: 39px;
   }
+
+  &:hover {
+    opacity: 70%;
+  }
 }
 
 .topic__catalog-item:active svg {

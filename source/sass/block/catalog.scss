@@ -44,6 +44,14 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+
+  &:disabled {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 3px;
+  }
 }
 
 .catalog__image {
@@ -98,6 +106,14 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
 }
 
 .catalog__item-desc {
@@ -144,4 +160,12 @@
   height: 100%;
 
   fill: currentColor;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:disabled {
+    fill: #63d1bb;
+  }
 }
