@@ -1,26 +1,23 @@
 .modal {
-  position: relative;
+  position: fixed;
+  z-index: 10;
 
+  display: none;
   width: 100%;
   height: 100%;
-
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .modal__container {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 10;
 
-  display: grid;
   width: 566px;
-  height: 336px;
+  margin: auto;
 
   text-align: center;
 
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
 
 .modal__title {
@@ -31,8 +28,21 @@
   text-transform: uppercase;
 }
 
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  display: none;
+
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 .modal--opened {
-  display: block;
+  display: flex;
 }
 
 .modal--opened .modal__overlay {

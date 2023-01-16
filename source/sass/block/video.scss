@@ -98,13 +98,12 @@
   cursor: pointer;
 
   &:hover {
-    size: 120%;
+    transform: translate(-50%, -50%) scale(1.2);
   }
 
   &:disabled {
+    transform: translate(-50%, -50%) scale(0.8);
     opacity: 30%;
-
-    size: 80%;
   }
 }
 
