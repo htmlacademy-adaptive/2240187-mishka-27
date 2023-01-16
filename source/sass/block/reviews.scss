@@ -19,14 +19,6 @@
     padding-bottom: 130px;
 
     background-image: url("../img/reviews.jpg");
-    background-image: -webkit-image-set(
-      url("../img/reviews.webp") type("image/webp"),
-      url("../img/reviews.jpg") type("image/jpeg")
-    );
-    background-image:         image-set(
-      url("../img/reviews.webp") type("image/webp"),
-      url("../img/reviews.jpg") type("image/jpeg")
-    );
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 350px 457px;
@@ -35,14 +27,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review@2x.jpg");
-      background-image: -webkit-image-set(
-        url("../img/review@2x.webp") type("image/webp"),
-        url("../img/review@2x.jpg") type("image/jpeg")
-      );
-      background-image:         image-set(
-        url("../img/review@2x.webp") type("image/webp"),
-        url("../img/review@2x.jpg") type("image/jpeg")
-      );
       background-repeat: no-repeat;
     }
   }
@@ -53,14 +37,6 @@
     padding: 77px 50px 93px 225px;
 
     background-image: url("../img/reviews.jpg");
-    background-image: -webkit-image-set(
-      url("../img/reviews.webp") type("image/webp"),
-      url("../img/reviews.jpg") type("image/jpeg")
-    );
-    background-image:         image-set(
-      url("../img/reviews.webp") type("image/webp"),
-      url("../img/reviews.jpg") type("image/jpeg")
-    );
     background-repeat: no-repeat;
     background-position: top left 50px;
     background-size: 350px 457px;
@@ -69,14 +45,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review@2x.jpg");
-      background-image: -webkit-image-set(
-        url("../img/review@2x.webp") type("image/webp"),
-        url("../img/review@2x.jpg") type("image/jpeg")
-      );
-      background-image:         image-set(
-        url("../img/review@2x.webp") type("image/webp"),
-        url("../img/review@2x.jpg") type("image/jpeg")
-      );
       background-repeat: no-repeat;
     }
   }
