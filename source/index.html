@@ -128,7 +128,7 @@
     <section class="topic topic--home">
       <div class="topic__container container">
         <h1 class="visually-hidden">Магазин вязаных изделий Mishka</h1>
-        <h2 class="topic__title title title--main">Милые штуки ручной работы для дома</h2>
+        <h2 class="topic__title title title--main">Милые штуки ручной <br> работы для дома</h2>
         <div class="topic__catalog-links">
           <a class="topic__catalog-item topic__catalog-item--interior" href="#">
             <span>Предметы интерьера</span>
@@ -166,7 +166,9 @@
         </dl>
         <div class="promo__image">
           <picture>
+            <source media="(min-width:767px)" srcset="./img/triple-set-tablet.webp 1x, ./img/triple-set-tablet@2x.webp 2x" type="image/webp" />
             <source media="(min-width:767px)" srcset="./img/triple-set-tablet.png 1x, ./img/triple-set-tablet@2x.png 2x">
+            <source media="(min-width:1200px)" srcset="./img/triple-set-tablet.webp 1x, ./img/triple-set-tablet@2x.webp 2x" type="image/webp" />
             <source media="(min-width:1200px)" srcset="./img/triple-set-desktop.png 1x, ./img/triple-set-desktop@2x.png 2x">
             <img src="./img/triple-set-mobile.png" srcset="./img/triple-set-mobile@2x.png" alt="Вязаные корзинки.">
           </picture>
@@ -258,7 +260,10 @@
         <div class="contacts__map">
           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A535e0fa41b2256d4632e4b3c4032fc92e817640cf4887f0fa75990debd9fe850&amp;source=constructor"></iframe>
           <div class="contacts__map-img">
-            <img src="./img/map-mobile.png" width="320" height="454" alt="Карта.">
+            <picture>
+              <source srcset="./img/map-mobile.webp" type="image/webp" />
+              <img src="./img/map-mobile.png" width="320" height="454" alt="Карта.">
+            </picture>
           </div>
         </div>
       </div>

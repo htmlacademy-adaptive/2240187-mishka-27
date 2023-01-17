@@ -1,5 +1,6 @@
 .promo {
   padding-top: 32px;
+  padding-right: 40px;
   padding-bottom: 42px;
 }
 
@@ -35,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 61px;
+    padding-top: 130px;
 
     grid-row: 1 / span 1;
   }
@@ -53,7 +54,7 @@
   display: block;
 
   font-weight: 700;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 20px;
   color: #63d1bb;
   text-transform: uppercase;
@@ -65,7 +66,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 70px;
+    top: 150px;
     left: 82px;
 
     max-width: 100px;
@@ -73,13 +74,14 @@
 }
 
 .promo__text {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 24px;
 }
 
 .promo__description {
   display: grid;
   margin: 0;
+  padding-top: 40px;
 
   line-height: 20px;
 
@@ -126,6 +128,8 @@
   display: block;
   width: 100%;
   height: 100%;
+  margin-top: 50px;
+  margin-left: 40px;
 }
 
 .promo__price {
@@ -137,6 +141,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
   }
 }
 

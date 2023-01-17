@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 25px;
+  padding-right: 50px;
   padding-bottom: 51px;
 
   @media (min-width: $desktop-width) {
@@ -25,16 +25,24 @@
 
     grid-template-columns: 1fr 175px;
 
+    @supports (background-image: url("../img/reviews.webp")) {
+      background-image: url("../img/reviews.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review@2x.jpg");
       background-repeat: no-repeat;
+
+      @supports (background-image: url("../img/review@2x.webp")) {
+        background-image: url("../img/review@2x.webp");
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
 
-    padding: 77px 50px 93px 225px;
+    padding: 57px 50px 93px 225px;
 
     background-image: url("../img/reviews.jpg");
     background-repeat: no-repeat;
@@ -43,15 +51,22 @@
 
     gap: 14px;
 
+    @supports (background-image: url("../img/reviews.webp")) {
+      background-image: url("../img/reviews.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review@2x.jpg");
       background-repeat: no-repeat;
+
+      @supports (background-image: url("../img/review@2x.webp")) {
+        background-image: url("../img/review@2x.webp");
+      }
     }
   }
 }
 
 .reviews__title {
-  font-size: 25px;
   line-height: 30px;
   text-align: start;
   color: $black;
@@ -80,6 +95,8 @@
 //.reviews__author {
 //}
 .reviews__name {
+  padding-top: 30px;
+
   font-size: 17px;
   line-height: 24px;
   color: $black;

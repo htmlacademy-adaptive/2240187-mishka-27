@@ -1,4 +1,5 @@
 .contacts {
+  margin-top: 70px;
   padding: 38px 0;
 
   @media (min-width: $tablet-width) {
@@ -14,6 +15,10 @@
 
     background: none;
   }
+}
+
+.contacts__title {
+  margin-right: 75px;
 }
 
 .contacts__container {
@@ -39,7 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 0 0 174px;
+    padding: 80px 0 0 154px;
 
     background-image: url("../img/svg/flag.svg");
     background-repeat: no-repeat;
@@ -50,7 +55,9 @@
 .contacts__list {
   display: grid;
   margin: 0;
+  margin-top: 20px;
   padding-top: 22px;
+  padding-right: 50px;
 
   gap: 15px 17px;
   grid-template-columns: 60px 1fr;

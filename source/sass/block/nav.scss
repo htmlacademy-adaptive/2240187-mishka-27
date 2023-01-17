@@ -291,6 +291,7 @@
 .nav__list--promo .nav__link {
   @media (min-width: $desktop-width) {
     min-height: auto;
+    margin-right: 40px;
     padding: 0;
 
     font-size: 15px;
@@ -357,6 +358,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 15px;
+
     grid-column: 3/4;
   }
 }
