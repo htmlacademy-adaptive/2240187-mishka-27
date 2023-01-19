@@ -11,6 +11,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .copyright__text {
@@ -24,4 +28,13 @@
 
 .copyright svg {
   fill: #63d1bb;
+}
+
+.copyright:hover svg,
+.copyright:focus svg {
+  fill: #46c1ae;
+}
+
+.copyright:active svg {
+  opacity: 0.3;
 }
