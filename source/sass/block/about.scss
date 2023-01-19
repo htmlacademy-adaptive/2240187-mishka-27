@@ -1,0 +1,88 @@
+.about {
+  padding: 32px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 54px;
+  }
+}
+
+.about__container {
+  @media (min-width: $desktop-width) {
+    padding: 0 225px 0;
+  }
+}
+
+.about__title {
+  text-align: start;
+}
+
+.about__list {
+  padding-top: 27px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+
+    column-count: 2;
+    column-gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 38px;
+  }
+}
+
+.about__item {
+  margin-bottom: 28px;
+  padding-top: 55px;
+
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    max-width: 325px;
+    margin-bottom: 54px;
+    padding-top: 57px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__item--ecolog {
+  background-image: url("../img/svg/ecolog.svg");
+  background-position: top left 8px;
+}
+
+.about__item--rusprice {
+  background-image: url("../img/svg/rusprice.svg");
+  background-position: top left;
+}
+
+.about__item--like {
+  background-image: url("../img/svg/like.svg");
+  background-position: top 6px left 7px;
+}
+
+.about__item--handmade {
+  background-image: url("../img/svg/handmade.svg");
+  background-position: top 3px left 4px;
+}
+
+.about__item--support {
+  background-image: url("../img/svg/support.svg");
+  background-position: top 4px left -2px;
+}
+
+.about__item--gift {
+  background-image: url("../img/svg/gift.svg");
+  background-position: top 2px left 3px;
+}

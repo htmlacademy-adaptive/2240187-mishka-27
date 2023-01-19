@@ -1,0 +1,41 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: $font-regular;
+  text-align: center;
+  color: $grey;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #ffffff;
+  border: 2px solid $grey;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+
+    background-color: #444444;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: rgba(68, 68, 68, 0.3);
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+  background-color: #f1f1f1;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 57px;
+  }
+}
+
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+.footer__logo {
+  display: none;
+  width: 102px;
+  height: 34px;
+
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.footer__logo[href] {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    outline: none;
+  }
+
+  &:active {
+    color: #46c1ae;
+
+    opacity: 0.3;
+  }
+}
+
+.footer__logo svg {
+  fill: currentColor;
+}
