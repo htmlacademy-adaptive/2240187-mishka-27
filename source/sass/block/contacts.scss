@@ -1,5 +1,4 @@
 .contacts {
-  margin-top: 70px;
   padding: 38px 0;
 
   @media (min-width: $tablet-width) {
@@ -18,7 +17,7 @@
 }
 
 .contacts__title {
-  margin-right: 75px;
+  text-align: left;
 }
 
 .contacts__container {
@@ -44,7 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 0 0 154px;
+    padding: 80px 0 0 174px;
 
     background-image: url("../img/svg/flag.svg");
     background-repeat: no-repeat;
@@ -55,26 +54,38 @@
 .contacts__list {
   display: grid;
   margin: 0;
-  margin-top: 20px;
   padding-top: 22px;
-  padding-right: 50px;
 
   gap: 15px 17px;
   grid-template-columns: 60px 1fr;
 
   @media (min-width: $tablet-width) {
+    padding-top: 42px;
+
+    column-gap: 25px;
+
     grid-template-columns: repeat(4, auto);
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 29px;
+
+    gap: 16px 25px;
     grid-template-columns: auto 1fr;
   }
 }
 
 .contacts__item {
+  margin: 0;
+  padding: 7px 0;
+
   font-size: 14px;
   line-height: 30px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .contacts__item a {
@@ -83,10 +94,26 @@
 
   border-bottom: 1px solid #62d1ba;
 
-  &:hover {
+  @media (min-width: $tablet-width) {
+    margin-right: 26px;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-bottom: 7px;
+  }
+
+  &:hover,
+  &:focus {
     color: #46c1ae;
 
-    border-bottom: 1px solid #46c1ae;
+    border-color: #46c1ae;
+    outline: none;
+  }
+
+  &:active {
+    border: none;
   }
 
   &:disabled {
@@ -113,10 +140,15 @@
 .contacts__map {
   width: 100%;
   height: 454px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 527px;
+    margin: 0;
 
     grid-column: -1 / -2;
     grid-row: 1 / span 2;
@@ -132,4 +164,20 @@
 
 .contacts__map-img {
   display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__map-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.no-js iframe {
+  display: none;
+}
+
+.no-js .contacts__map-img {
+  display: block;
 }

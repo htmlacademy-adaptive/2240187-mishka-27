@@ -73,14 +73,14 @@ const svg = () =>
     .pipe(gulp.dest('build/img/svg'));
 
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img/sprite'));
+    .pipe(gulp.dest('build/img'));
 }
 
 // Copy

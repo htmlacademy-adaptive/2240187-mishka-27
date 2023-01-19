@@ -2,18 +2,13 @@
   padding-top: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 67px;
+    padding-top: 64px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 112px;
   }
 }
-
-//.catalog__container {
-//}
-//.container {
-//}
 
 .catalog__list {
   display: grid;
@@ -26,8 +21,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-
     gap: 51px;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -45,104 +38,120 @@
     grid-template-rows: auto 1fr;
   }
 
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  .catalog__image {
+    display: block;
+    height: 195px;
+
+    @media (min-width: $tablet-width) {
+      height: 334px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 462px;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
-  &:disabled {
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 3px;
-  }
-}
-
-.catalog__image {
-  display: block;
-  height: 195px;
-
-  @media (min-width: $tablet-width) {
-    height: 334px;
+  .catalog__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
-  @media (min-width: $desktop-width) {
-    height: 462px;
-  }
-}
+  .catalog__list-container {
+    padding: 28px 28px 25px;
 
-.catalog__image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+    border: 1px solid #ececec;
 
-.catalog__list-container {
-  padding: 28px 28px 25px;
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      padding: 27px 33px 25px;
+    }
 
-  border: 1px solid #ececec;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    padding: 27px 33px 25px;
+    @media (min-width: $desktop-width) {
+      padding: 27px 27px 25px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 27px 27px 25px;
+  .catalog__item:hover .catalog__list-container,
+  .catalog__item:focus-within .catalog__list-container {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
-}
 
-//.catalog__descrip {
-//}
-.catalog__title {
-  text-decoration: none;
-}
+  .catalog__item:active .catalog__list-container {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
-.catalog__title h3 {
-  margin: 0;
+  .catalog__title {
+    text-decoration: none;
 
-  font-size: 17px;
-  line-height: 24px;
-  color: $black;
+    &:hover,
+    &:focus {
+      outline: none;
+      opacity: 60%;
+    }
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
+    &:active {
+      opacity: 30%;
+    }
+  }
+
+  .catalog__title h3 {
+    margin: 0;
+
+    font-size: 17px;
     line-height: 24px;
+    color: $black;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
-  &:hover {
-    opacity: 60%;
+  .catalog__item-desc {
+    margin-top: 5px;
+    margin-bottom: 17px;
+
+    font-size: 13px;
+    line-height: 30px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 12px;
+    }
   }
 
-  &:disabled {
-    opacity: 30%;
+  .catalog__price-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 23px;
+
+    border-top: 1px solid #ececec;
+
+    @media (min-width: $tablet-width) {
+      margin-top: auto;
+    }
   }
-}
 
-.catalog__item-desc {
-  font-size: 13px;
-  line-height: 30px;
-
-  @media (min-width: $tablet-width) {
+  .catalog__price {
+    font-weight: 700;
     font-size: 15px;
+    line-height: 24px;
+    color: $black;
+
+    @media (min-width: $tablet-width) {
+      font-size: 17px;
+    }
   }
-}
-
-.catalog__price-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 23px;
-
-  border-top: 1px solid #ececec;
-
-  @media (min-width: $tablet-width) {
-    margin-top: auto;
-  }
-}
-
-.catalog__price {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
-  color: $black;
 }
 
 .catalog__cart {
@@ -153,6 +162,17 @@
   height: 19px;
 
   color: rgba(0, 0, 0, 0.2);
+
+  &:hover,
+  &:focus {
+    color: #63d1bb;
+
+    outline: none;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .catalog__cart svg {
@@ -160,12 +180,4 @@
   height: 100%;
 
   fill: currentColor;
-
-  &:hover {
-    fill: #63d1bb;
-  }
-
-  &:disabled {
-    fill: #63d1bb;
-  }
 }

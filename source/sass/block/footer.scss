@@ -30,26 +30,23 @@
   }
 }
 
+.footer__logo[href] {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    outline: none;
+  }
+
+  &:active {
+    color: #46c1ae;
+
+    opacity: 0.3;
+  }
+}
+
 .footer__logo svg {
   fill: currentColor;
-
-  &:hover {
-    fill: #46c1ae;
-  }
-
-  &:disabled {
-    opacity: 30%;
-
-    fill: #46c1ae;
-  }
-}
-
-.footer__copyright:hover svg {
-  fill: #46c1ae;
-}
-
-.footer__copyright:disabled svg {
-  opacity: 30%;
-
-  fill: #46c1ae;
 }

@@ -16,15 +16,26 @@
   border: 2px solid $grey;
   cursor: pointer;
 
-  &:hover {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+
+  &:hover,
+  &:focus {
     color: #ffffff;
 
     background-color: #444444;
+    outline: none;
   }
 
-  &:disabled {
-    color: #ffffff 30%;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
-    background-color: #444444;
+  &:disabled,
+  &--disabled {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: rgba(68, 68, 68, 0.3);
   }
 }
