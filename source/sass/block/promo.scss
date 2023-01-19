@@ -1,11 +1,29 @@
 .promo {
   padding-top: 32px;
   padding-bottom: 42px;
+
+  background-image: url("../img/svg/zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    padding-bottom: 12px;
+
+    background: none;
+  }
 }
 
 .promo__container {
   display: grid;
 
+  gap: 16px;
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
@@ -21,6 +39,24 @@
 
     gap: 35px 60px;
     grid-template-columns: 1fr 525px;
+  }
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      right: 50px;
+      bottom: 0;
+      left: 50px;
+      z-index: 1;
+
+      height: 23px;
+
+      background-image: url("../img/svg/zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: contain;
+    }
   }
 }
 
@@ -42,7 +78,13 @@
 }
 
 .promo__title {
+  margin-bottom: 4px;
+
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
@@ -73,8 +115,19 @@
 }
 
 .promo__text {
+  margin: 0 0 5px;
+
   font-size: 15px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .promo__description {
@@ -84,6 +137,12 @@
   line-height: 20px;
 
   grid-template-columns: 98px 1fr;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    font-size: 15px;
+  }
 }
 
 .promo__item {
@@ -128,24 +187,28 @@
   height: 100%;
 }
 
+.promo__price-container {
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
+}
+
 .promo__price {
+  margin: 0 0 22px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
     font-size: 20px;
     line-height: 24px;
-  }
-}
-
-.promo__button {
-  @media (min-width: $tablet-width) {
-    width: 292px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 292px;
   }
 }

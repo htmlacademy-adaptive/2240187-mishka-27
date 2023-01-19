@@ -20,12 +20,20 @@
   grid-template-columns: 1fr;
 
   @media (min-width: $desktop-width) {
-    max-width: 1048px;
-    padding: 0;
+    max-width: 1050px;
 
-    gap: 17px 59px;
+    gap: 4px 59px;
     grid-template-columns: 683px 1fr;
     grid-template-rows: auto 1fr;
+  }
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -52,7 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 95px 50px 5px 20px;
+    padding: 95px 55px 5px 20px;
 
     background-position: top 45px left 20px;
   }
@@ -96,15 +104,38 @@
   background-size: cover;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:disabled {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 30%;
+  }
 }
 
 .video__desc {
+  padding: 22px 32px 32px;
+
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 3px 17px 45px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
-//.video__text {
-//}
+.video__text {
+  margin-bottom: 41px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}
 
 .video__button {
   @media (min-width: $desktop-width) {

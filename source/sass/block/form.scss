@@ -1,6 +1,15 @@
 .form {
   padding-top: 17px;
   padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 101px;
+  }
 }
 
 .form__desc {
@@ -17,6 +26,14 @@
   @media (min-width: $desktop-width) {
     max-width: 702px;
     margin-left: 175px;
+  }
+}
+
+.form form {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
   }
 }
 
@@ -54,12 +71,16 @@
 }
 
 .form__label-text {
+  padding-top: 5px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: $black;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
+
     font-size: 19px;
     line-height: 18px;
   }
@@ -74,6 +95,11 @@
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .form__section-name span {
@@ -81,6 +107,9 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 37px;
+
+    font-size: 17px;
+    line-height: 16px;
   }
 }
 
@@ -107,8 +136,8 @@
 }
 
 .form__input-wrapper {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -140,7 +169,7 @@
 
   display: block;
   flex-shrink: 0;
-  margin-right: 23px;
+  margin: 0 23px 0 0;
 
   border: 2px solid #444444;
 
@@ -218,6 +247,24 @@
   }
 }
 
+.form__label:hover .form__input-control,
+.form__input-control:focus {
+  border-color: #62d1ba;
+}
+
+.form__label:active .form__input-control {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.form__input-control:disabled,
+.form__input-control:disabled ~ span {
+  opacity: 0.3;
+}
+
+.form__label:hover .form__input-control:disabled {
+  border-color: #444444;
+}
+
 .form__input-control--radio:checked::before {
   display: block;
 }
@@ -230,6 +277,19 @@
   @media (min-width: $tablet-width) {
     background-size: 32px 22px;
   }
+}
+
+.form__section--data .form__input-wrapper {
+  padding-top: 9px;
+  padding-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.form__section--data .form__label:not(:last-child) {
+  margin-bottom: 19px;
 }
 
 .form__input-group {
@@ -284,10 +344,50 @@
     padding: 14px 17px 15px;
   }
 
+  &--error {
+    border-color: #ff0000;
+  }
+
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
 
     opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+    outline: none;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+
+  &:disabled {
+    border-color: #000000;
+    opacity: 0.3;
+  }
+}
+
+.form__section--contacts {
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 29px;
+  }
+}
+
+.form__section--contacts .form__container {
+  padding-top: 17px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 22px;
   }
 }
 
@@ -359,6 +459,16 @@
     @media (min-width: $tablet-width) and (max-width: 1149px) {
       right: 22px;
     }
+  }
+}
+
+// По макету
+.form__section--message {
+  padding-top: 17px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 

@@ -30,6 +30,23 @@
   }
 }
 
+.footer__logo[href] {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+
+    outline: none;
+  }
+
+  &:active {
+    color: #46c1ae;
+
+    opacity: 0.3;
+  }
+}
+
 .footer__logo svg {
   fill: currentColor;
 }
