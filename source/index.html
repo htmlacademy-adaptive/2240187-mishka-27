@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mishka: магазин игрушек</title>
   <link rel="stylesheet" href="./css/style.css">
-
   <link rel="stylesheet" href="./favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="manifest" href="./manifest.json">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff" as="font" crossorigin="anonymous">
 </head>
 
 <body class="body no-js">
@@ -40,7 +43,7 @@
 
       <ul class="nav__list nav__list--user list-reset">
         <li class="nav__item">
-          <a class="nav__link nav__link--icon nav__link--search" href="#">
+          <a class="nav__link nav__link--icon nav__link--search" href="#" aria-label="Поиск по сайту.">
             <svg width="18" height="18" role="img">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
@@ -48,7 +51,7 @@
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--icon nav__link--cart" href="#">
+          <a class="nav__link nav__link--icon nav__link--cart" href="#" aria-label="Корзина.">
             <svg width="21" height="18" role="img">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
@@ -168,13 +171,13 @@
         </ol>
         <a class="reviews__button button" href="#">Написать</a>
         <div class="reviews__control">
-          <button class="reviews__control-arrow reviews__control-arrow--prev" type="button">
+          <button class="reviews__control-arrow reviews__control-arrow--prev" type="button" aria-label="Листать назад.">
             <span class="visually-hidden">Назад</span>
             <svg width="50" height="26" role="img">
               <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
             </svg>
           </button>
-          <button class="reviews__control-arrow reviews__control-arrow--next" type="button">
+          <button class="reviews__control-arrow reviews__control-arrow--next" type="button" aria-label="Листать дальше.">
             <span class="visually-hidden">Вперед</span>
             <svg width="50" height="26" role="img">
               <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
@@ -206,7 +209,7 @@
               <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 767px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 767px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-              <source srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp" type="image/webp">
+              <source srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x" type="image/webp">
               <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg" width="320" height="454" alt="Карта.">
             </picture>
           </div>
